@@ -1,0 +1,26 @@
+Create an EC-2 ubuntu instance with ports SSH,HTTP,HTTPS and 8080 Custom TCP 
+   sudo apt update  (Update your system)
+    sudo apt install openjdk-11-jre (Install java 11)
+      java -version (To check java version)
+      curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee     /usr/share/keyrings/jenkins-keyring.asc > /dev/null  
+      echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \   https://pkg.jenkins.io/debian-stable binary/ | sudo tee \ /etc/apt/sources.list.d/jenkins.list > /dev/null
+      sudo apt-get install jenkins   [Install java]
+      sudo systemctl enable jenkins [Ebanle Jernkins]
+     sudo systemctl start jenkins   [ Start Jenkins]
+     sudo systemctl status jenkins  [ To check the status of jenkins]
+     Copy the Public IP of our instance and paste in new tab < PUBLIC IP : 8080 >
+     cat < Paste the path to get the jenkins password >
+     Install all Plugins
+     Create Username and Password for Jenkins
+     Create a new JOB with free style project pipieline.
+     Configure with the GIT-HUB URL from Git-Hub node-to-do repo
+     BUILD the pipeline
+     cd /var/lib/jenkins/workspace/To-Do-App [ Change into this path ]
+     sudo apt install nodejs
+     sudo apt install npm
+     sudo npm install
+     node app.js
+     Open the server and in Security Group edit inbound rule and add port number 8000 and save.
+     Open the new tab and type < Public Ip : 8080 >  [Now we will able to see the to-do window].
+     Now if we refresh the page it will close to fix this follow the below steps: -
+      
