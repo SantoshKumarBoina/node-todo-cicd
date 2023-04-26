@@ -22,5 +22,4 @@ Create an EC-2 ubuntu instance with ports SSH,HTTP,HTTPS and 8080 Custom TCP
      Open the server and in Security Group edit inbound rule and add port number 8000 and save.
      node app.js
      Open the new tab and type < Public Ip : 8080 >  [Now we will able to see the to-do window].
-     Now if we refresh the page it will close to fix this follow the below steps: -
-      
+            
